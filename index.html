@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='modulo arithematic.js'></script>
+        <script src="trig.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+         <h2>modulo arithematic</h2>
+            <p>congruent number to n (mod k)</p>
+            <input type="number" placeholder="number n" id="congruent_n">
+            <input  type="number" placeholder="mod k" id="mod">
+            <button onclick=my_scn()>Smallest positive congruent number to n (mod k)</button>
+            <button onclick=my_mi()>multiplicative inverse of n in mod k</button>
+            <button onclick=my_sd()>smallest digit to be added to make n divisible my k</button>
+            <p id="ma_answer">Click the button to see Asnwer</p>
+        </div>
+        <div>
+            <p>problems with 3 parameters</p>
+            <input type="number" placeholder="number a" id="a">
+            <input type="number" placeholder="number b" id="b">
+            <input  type="number" placeholder="mod k" id="modabk">
+            <button onclick=checkcongruent()>Check if a and b is congruent</button>
+            <button onclick=my_set()>a numbers, starting from b, congruent to b mod k</button>
+            <p id="checkcongruent_answer">click button to see answer</p>
+        </div>
+        <div>
+            <h2>trigonometry</h2>
+            <input type="number" onchange=rtd() placeholder="radians to degree" id="convertrtd">
+            <p id="rtd"></p>
+            <input type="number" onchange=dtr() placeholder="degree to radian" id="convertdtr">
+            <p id="dtr"></p>
+            <input type="number" placeholder="side A" id="sideA">
+            <input type="number" placeholder="side B" id="sideB">
+            <input type="number" placeholder="side C" id="sideC">
+            <input type="number" placeholder="angle A" id="angleA">
+            <input type="number" placeholder="angle B" id="angleB">
+            <input type="number" placeholder="angle C" id="angleC">
+            <button onclick=solvetrig()>solve</button>
+            <p id="solvetrig">Answerrrr</p>
+
+        </div>
+
+    </body>
+</html>
