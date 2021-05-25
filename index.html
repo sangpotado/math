@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src='series.js'></script>
         <script src='modulo arithematic.js'></script>
         <script src="trig.js"></script>
         <script src="script.js"></script>
@@ -8,6 +9,16 @@
     <body>
         <a href="/math2.html">bases converter</a>
         <a href="/math3.html">permutation and combination</a>
+        <div>
+            <h2>arithematic and geometric series</h2>
+            <p>sum start at n=0</p>
+            <input type="number" placeholder="number a" id="series_a">
+            <input type="number" placeholder="common difference r" id="series_r">
+            <input type="number" placeholder="number n" id="series_n">
+            <button onclick=a_series()>list and sum of arithematic series</button>
+            <button onclick=g_series()>list and sum of geometric series</button>
+            <p id='series_ans'>click button to see Answer</p>
+        </div>
         <div>
          <h2>modulo arithematic</h2>
             <p>congruent number to n (mod k)</p>
